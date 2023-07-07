@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Criptomonedas y Gráfica de Variación de Precios</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Conversor de Criptomonedas y Gráfica de Variación de Precios</h1>
+  </header>
+
+  <main>
+    <div class="form-group">
+      <label for="crypto">Moneda Virtual:</label>
+      <select id="crypto"></select>
+    </div>
+    <div class="form-group">
+      <label for="amount">Cantidad:</label>
+      <input type="number" id="amount" placeholder="Ingrese la cantidad">
+    </div>
+    <div class="form-group">
+      <button id="convertBtn">Convertir a MXN</button>
+      <button id="clearBtn">Borrar Historial</button>
+    </div>
+   
+
+   
+
+    <div id="history">
+      <h2>Historial de Cálculos</h2>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>Unidades</th>
+            <th>Criptomoneda</th>
+            <th>Precio en MXN</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="chartContainer">
+      <h2>Variación de Precios de la Criptomoneda</h2>
+      <canvas id="chart"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Conversor de Criptomonedas y Gráfica de Variación de Precios. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
